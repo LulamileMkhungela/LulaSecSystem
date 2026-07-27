@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>LulaSecSystem — Documentation & User Guide</title>
+<style>
+  :root { --brand:#0ea5e9; --brand2:#5eead4; --bg:#0b1220; --surface:#0e1729; --line:#1f2c4a; --text:#cbd5e1; --muted:#94a3b8; }
+  *{box-sizing:border-box}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 24px}
+  h1{font-size:32px;color:#f1f5f9;margin:0 0 8px}
+  h2{font-size:22px;color:#5eead4;margin:32px 0 12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+  h3{font-size:17px;color:#f1f5f9;margin:20px 0 8px}
+  .lead{color:var(--muted);font-size:15px;margin:0 0 24px}
+  .tag{display:inline-block;background:rgba(94,234,212,0.1);color:#5eead4;padding:3px 10px;border-radius:999px;font-size:11px;margin-right:4px}
+  code{background:#1f2c4a;padding:2px 6px;border-radius:4px;font-family:ui-monospace,monospace;font-size:13px;color:#5eead4}
+  pre{background:#060a14;padding:16px;border-radius:8px;overflow-x:auto;border:1px solid var(--line)}
+  .role-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0}
+  .role-card h3{margin-top:0}
+  .demo-list{background:rgba(14,165,233,0.08);border:1px solid rgba(14,165,233,0.2);padding:16px;border-radius:8px;margin:20px 0}
+  .demo-list code{background:rgba(0,0,0,0.3);margin:0 4px}
+  ul,ol{padding-left:22px}
+  li{margin:6px 0}
+  .badge{display:inline-block;background:rgba(239,68,68,0.15);color:#fca5a5;padding:2px 8px;border-radius:6px;font-size:11px;margin-right:4px}
+  .badge.green{background:rgba(34,197,94,0.15);color:#86efac}
+  .badge.blue{background:rgba(56,189,248,0.15);color:#7dd3fc}
+  .badge.yellow{background:rgba(245,158,11,0.15);color:#fcd34d}
+  table{width:100%;border-collapse:collapse;margin:12px 0}
+  th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+  th{color:var(--muted);font-size:12px;text-transform:uppercase}
+  hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+  .toc{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;margin:20px 0}
+  .toc a{color:#0ea5e9;text-decoration:none;display:block;padding:4px 0}
+  .toc a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🛡️ LulaSecSystem — Documentation</h1>
+  <p class="lead">A complete guide to the LulaSecSystem enterprise security management platform — covering every user role, feature, and workflow.</p>
+
+  <div class="toc">
+    <strong>📑 Table of Contents</strong>
+    <a href="#overview">1. Overview</a>
+    <a href="#quickstart">2. Quick Start</a>
+    <a href="#demo">3. Demo Accounts</a>
+    <a href="#roles">4. User Roles & Permissions</a>
+    <a href="#features">5. Features by Module</a>
+    <a href="#innovations">6. Innovative Features</a>
+    <a href="#workflows">7. Common Workflows</a>
+    <a href="#security">8. Security & Privacy</a>
+    <a href="#tech">9. Technical Architecture</a>
+  </div>
+
+  <h2 id="overview">1. Overview</h2>
+  <p><strong>LulaSecSystem</strong> is a unified security operations platform that brings together incident management, visitor tracking, patrol monitoring, AI surveillance, access control, and real-time dispatch into a single, role-aware application.</p>
+  <p>It is designed to scale from a single guard post to a multi-site enterprise, with five pre-configured user roles that each get a tailored dashboard and feature set.</p>
+
+  <h3>Why LulaSecSystem?</h3>
+  <ul>
+    <li><span class="tag">Unified</span> One platform, one login, all security operations</li>
+    <li><span class="tag">Role-aware</span> Every user sees only what's relevant to their job</li>
+    <li><span class="tag">Real-time</span> Live maps, live feeds, live updates</li>
+    <li><span class="tag">AI-augmented</span> Threat scoring, anomaly detection, smart alerts</li>
+    <li><span class="tag">Mobile-ready</span> Panic button works from any device</li>
+  </ul>
+
+  <h2 id="quickstart">2. Quick Start</h2>
+  <ol>
+    <li>Open <code>index.html</code> in a modern browser (Chrome, Edge, Firefox, Safari)</li>
+    <li>Click <strong>🚀 Launch the App</strong> on the landing page, OR pick a role from the <strong>👁️ Try a Demo Account</strong> modal</li>
+    <li>You'll be signed in instantly with pre-filled credentials</li>
+    <li>Explore the role-specific dashboard from the sidebar</li>
+    <li>Try clicking the red <strong>🆘 PANIC</strong> button (top-right) to see the emergency dispatch flow</li>
+  </ol>
+  <p><em>No backend required — the entire demo runs in your browser with realistic mock data.</em></p>
+
+  <h2 id="demo">3. Demo Accounts</h2>
+  <div class="demo-list">
+    <strong>All demo accounts use the password:</strong> <code>Demo1234!</code><br>
+    You can also click any demo card on the login screen to auto-fill credentials.
+  </div>
+
+  <table>
+    <tr><th>Role</th><th>Email</th><th>What you'll see</th></tr>
+    <tr><td>🛡️ Administrator</td><td><code>admin@lulasecsystem.com</code></td><td>Full system: 12 nav items, all sites, all users, analytics, settings</td></tr>
+    <tr><td>🎯 Security Officer</td><td><code>officer@lulasecsystem.com</code></td><td>Command center: incident triage, dispatch, reports</td></tr>
+    <tr><td>👮 Security Guard</td><td><code>guard@lulasecsystem.com</code></td><td>Field ops: patrol, report, comms, panic</td></tr>
+    <tr><td>🏠 Resident</td><td><code>resident@lulasecsystem.com</code></td><td>Community: pre-register guests, report issues, watch feed</td></tr>
+    <tr><td>🪪 Visitor</td><td><code>visitor@lulasecsystem.com</code></td><td>Minimal: visit pass QR, host details</td></tr>
+  </table>
+
+  <h2 id="roles">4. User Roles & Permissions</h2>
+
+  <div class="role-card">
+    <h3>🛡️ Administrator <span class="badge green">Full access</span></h3>
+    <p>The top-of-the-pyramid role. Administrators manage the entire platform: users, sites, policies, integrations, and global analytics.</p>
+    <strong>Sidebar modules:</strong>
+    <ul>
+      <li>📊 Dashboard, 🗺️ Live Map, 🚨 Incidents, 👮 Guards & Patrols, 🪪 Visitors, 📹 Cameras, 🔐 Access Control, 📈 Analytics, 👥 User Management, ⚙️ Settings</li>
+    </ul>
+  </div>
+
+  <div class="role-card">
+    <h3>🎯 Security Officer <span class="badge blue">Operational</span></h3>
+    <p>Manages day-to-day operations for an assigned site or region. Triages incidents, dispatches guards, runs live surveillance, and produces reports.</p>
+    <strong>Sidebar modules:</strong>
+    <ul>
+      <li>🎯 Command Center, 🗺️ Live Map, 🚨 Incidents, 👮 Guard Force, 🪪 Visitors, 📹 Cameras, 📈 Reports, 📡 Dispatch</li>
+    </ul>
+  </div>
+
+  <div class="role-card">
+    <h3>👮 Security Guard <span class="badge yellow">Field</span></h3>
+    <p>The boots-on-the-ground role. Guards run patrols, scan checkpoints, submit incident reports, talk to dispatch, and trigger the panic button when needed.</p>
+    <strong>Sidebar modules:</strong>
+    <ul>
+      <li>🏠 My Dashboard, 🚶 My Patrol, 🚨 Report Incident, 🪪 Visitor Check-in, 📞 Communications, 🎓 Training</li>
+    </ul>
+  </div>
+
+  <div class="role-card">
+    <h3>🏠 Resident <span class="badge blue">Community</span></h3>
+    <p>Lives in a LulaSec-protected estate or building. Pre-registers guests, reports neighborhood issues, and participates in community watch.</p>
+    <strong>Sidebar modules:</strong>
+    <ul>
+      <li>🏠 My Home, 🪪 Pre-Register Guest, 🚨 Report Issue, 👥 Community Watch, 🔔 Notifications, 👤 My Profile</li>
+    </ul>
+  </div>
+
+  <div class="role-card">
+    <h3>🪪 Visitor <span class="badge yellow">Limited</span></h3>
+    <p>A pre-registered guest with view-only access to their own visit pass and host details. Can show their QR code at the gate.</p>
+    <strong>Sidebar modules:</strong>
+    <ul>
+      <li>🎫 My Visit, 🪪 My Pass</li>
+    </ul>
+  </div>
+
+  <h2 id="features">5. Features by Module</h2>
+
+  <h3>📊 Dashboard</h3>
+  <p>Each role has a customized dashboard:</p>
+  <ul>
+    <li><strong>Admin:</strong> Cross-site KPIs, incident trends, site status, recent notifications</li>
+    <li><strong>Officer:</strong> Triage queue, response time, force status</li>
+    <li><strong>Guard:</strong> Shift timer, checkpoint progress, quick actions, performance rating</li>
+    <li><strong>Resident:</strong> Estate status, expected guests, packages, announcements</li>
+    <li><strong>Visitor:</strong> QR pass, visit details, host info</li>
+  </ul>
+
+  <h3>🚨 Incident Management</h3>
+  <ul>
+    <li>Report new incidents with type, severity, site, zone, and description</li>
+    <li>View all incidents with status tabs (All, Open, In Progress, Resolved, Closed)</li>
+    <li>Click any incident to see full details, AI threat score, and evidence</li>
+    <li>Reassign, resolve, or close incidents from the detail view</li>
+    <li>AI Threat Score (0-100) auto-calculated and color-coded</li>
+  </ul>
+
+  <h3>🪪 Visitor Management</h3>
+  <ul>
+    <li>Pre-register visitors with ID, host, purpose, and vehicle</li>
+    <li>Auto-generated pass code (e.g., <code>VST-A4821</code>)</li>
+    <li>One-click check-in and check-out</li>
+    <li>Track all visitor history and current status</li>
+  </ul>
+
+  <h3>👮 Guard & Patrol Management</h3>
+  <ul>
+    <li>View all guards with current status, location, shift</li>
+    <li>Track patrol completion percentage with progress bars</li>
+    <li>Performance ratings (1-5 stars)</li>
+    <li>Click any guard to see detailed profile and quick-call</li>
+  </ul>
+
+  <h3>📹 Camera Surveillance</h3>
+  <ul>
+    <li>Grid of all cameras with live "scan-line" animation</li>
+    <li>Online/offline status, AI detection status, alert counts</li>
+    <li>Click any camera for full-screen view with controls</li>
+    <li>AI alerts integrated into the incident system</li>
+  </ul>
+
+  <h3>🔐 Access Control</h3>
+  <ul>
+    <li>Manage doors, vehicle gates, and secure zones</li>
+    <li>Lock/unlock remotely with one click</li>
+    <li>Multi-factor modes (Card, Biometric, PIN, ANPR)</li>
+    <li>User counts and last access times</li>
+  </ul>
+
+  <h3>📈 Analytics & Reports</h3>
+  <ul>
+    <li>Incident trends (bar chart) over last 7 days</li>
+    <li>Incidents by type (donut chart)</li>
+    <li>Response time trend (line chart) over 7 months</li>
+    <li>Key performance metrics: response time, resolution rate, performance score</li>
+  </ul>
+
+  <h2 id="innovations">6. Innovative Features</h2>
+
+  <h3>🆘 One-Tap Panic Button</h3>
+  <p>Available in the top bar of every page. Click it to:</p>
+  <ul>
+    <li>Immediately alert dispatch with your live GPS</li>
+    <li>Stream live audio from your device</li>
+    <li>See the ETA of the responding unit in real time</li>
+    <li>Cancel within 10 seconds if it's a false alarm</li>
+  </ul>
+
+  <h3>🤖 AI Threat Scoring</h3>
+  <p>Every incident gets a 0-100 threat score with explainable reasoning. Scores above 70 trigger immediate dispatch recommendations.</p>
+
+  <h3>🗺️ Live Operations Map</h3>
+  <p>A geo-aware map showing all guards, incidents, cameras, and visitors on a single screen — with animated pulses for active events.</p>
+
+  <h3>🗣️ Voice Dispatch</h3>
+  <p>Push-to-talk between dispatchers and field guards, with real-time transcription for record-keeping.</p>
+
+  <h3>🌗 Dark / Light Theme</h3>
+  <p>Toggle the theme with the moon/sun button in the top bar. Preference is saved across sessions.</p>
+
+  <h3>⌘K Quick Search</h3>
+  <p>Press <code>⌘K</code> (or <code>Ctrl+K</code>) anywhere to jump to the search bar.</p>
+
+  <h2 id="workflows">7. Common Workflows</h2>
+
+  <h3>Reporting an incident (Guard)</h3>
+  <ol>
+    <li>Click <strong>🚨 Report</strong> in the top bar (or sidebar)</li>
+    <li>Fill in title, type, severity, site, zone, description</li>
+    <li>Submit — a notification fires to all admins/officers</li>
+  </ol>
+
+  <h3>Pre-registering a visitor (Resident)</h3>
+  <ol>
+    <li>Click <strong>🪪 Pre-Register Guest</strong></li>
+    <li>Enter name, ID, purpose, vehicle</li>
+    <li>Receive auto-generated pass code</li>
+    <li>Forward the pass code to your guest for seamless entry</li>
+  </ol>
+
+  <h3>Triage an incident (Officer)</h3>
+  <ol>
+    <li>From the dashboard, view the incident queue</li>
+    <li>Click an incident to see full details + threat score</li>
+    <li>Reassign to an available guard</li>
+    <li>Mark as resolved when complete</li>
+  </ol>
+
+  <h2 id="security">8. Security & Privacy</h2>
+  <ul>
+    <li>🔒 256-bit AES encryption (production deployment)</li>
+    <li>🔐 2-Factor Authentication supported</li>
+    <li>📋 Full audit log retention (configurable up to 365 days)</li>
+    <li>🛡️ Role-based access control (RBAC) enforced on every action</li>
+    <li>🌍 GDPR-compliant data handling with export & delete</li>
+    <li>⏱️ Automatic session timeout (default 30 minutes)</li>
+  </ul>
+
+  <h2 id="tech">9. Technical Architecture</h2>
+  <p>LulaSecSystem is built as a zero-dependency, vanilla-JS single-page application for maximum portability and zero install friction.</p>
+
+  <h3>File structure</h3>
+  <pre>
+LulaSecSystem/
+├── index.html          # Main entry point + landing + app shell
+├── css/
+│   └── styles.css      # Complete design system
+├── js/
+│   ├── data.js         # In-memory mock database (users, sites, incidents, etc.)
+│   ├── auth.js         # Session & login logic
+│   └── app.js          # Pages, routing, event handlers, charts
+├── assets/
+│   └── favicon.svg
+└── docs/
+    └── index.html      # This documentation
+  </pre>
+
+  <h3>Tech stack</h3>
+  <ul>
+    <li><strong>UI:</strong> Pure HTML5 + CSS3 (custom design system, no framework)</li>
+    <li><strong>Logic:</strong> Vanilla JavaScript (ES2020+), no build step</li>
+    <li><strong>Charts:</strong> Inline SVG (no charting library needed)</li>
+    <li><strong>State:</strong> In-memory + <code>sessionStorage</code> + <code>localStorage</code></li>
+    <li><strong>Fonts:</strong> Inter (UI) + JetBrains Mono (codes)</li>
+  </ul>
+
+  <h3>Browser support</h3>
+  <p>Chrome 90+, Edge 90+, Firefox 88+, Safari 14+. Mobile browsers fully supported.</p>
+
+  <hr>
+  <p style="text-align:center;color:var(--muted);font-size:13px">
+    © 2026 LulaSecSystem — Built for security teams that never sleep.
+  </p>
+</div>
+</body>
+</html>

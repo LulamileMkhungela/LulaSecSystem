@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LulaSecSystem — Enterprise Security Management Platform</title>
+  <meta name="description" content="LulaSecSystem is a comprehensive enterprise security management platform featuring incident tracking, visitor management, real-time surveillance, patrol monitoring, access control, and role-based dashboards." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+  <!-- ======================= LANDING / LOGIN ======================= -->
+  <div id="landing-page" class="landing-page">
+    <nav class="top-nav">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="32" height="32">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5eead4"/>
+                <stop offset="100%" stop-color="#0ea5e9"/>
+              </linearGradient>
+            </defs>
+            <path d="M20 2 L36 8 V20 C36 28 28 35 20 38 C12 35 4 28 4 20 V8 Z" fill="url(#lg)"/>
+            <path d="M13 20 L18 25 L27 14" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-name">LulaSecSystem</h1>
+          <p class="brand-tag">Enterprise Security Management</p>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" data-action="open-docs">📘 Documentation</button>
+        <button class="btn btn-ghost" data-action="open-demo-info">🎬 Demo Accounts</button>
+        <button class="btn btn-primary" data-action="show-login">Sign In</button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <span class="pill">🛡️ Trusted by 500+ enterprises worldwide</span>
+        <h2 class="hero-title">
+          Security operations, <span class="grad-text">reimagined.</span>
+        </h2>
+        <p class="hero-sub">
+          LulaSecSystem unifies incident management, visitor tracking, patrol monitoring,
+          AI surveillance and access control into one powerful, role-aware platform —
+          built for security teams that need to act fast.
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-action="show-login">🚀 Launch the App</button>
+          <button class="btn btn-secondary btn-lg" data-action="open-docs">📖 Read the Guide</button>
+          <button class="btn btn-ghost btn-lg" data-action="open-demo-info">👁️ Try a Demo Account</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong>99.99%</strong><span>Uptime SLA</span></div>
+          <div><strong>2.4M+</strong><span>Events processed / day</span></div>
+          <div><strong>&lt; 30s</strong><span>Avg. incident response</span></div>
+          <div><strong>256-bit</strong><span>AES encryption</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SHOWCASE -->
+    <section class="features">
+      <h3 class="section-title">Everything you need to run modern security operations</h3>
+      <p class="section-sub">From a single guard post to a multi-site enterprise, LulaSecSystem scales with you.</p>
+      <div class="feature-grid">
+        <article class="feature-card" data-action="show-login" data-role="admin">
+          <div class="feature-icon">🚨</div>
+          <h4>Incident Management</h4>
+          <p>Report, triage, assign and resolve incidents with full audit trails and SLA tracking.</p>
+        </article>
+        <article class="feature-card" data-action="show-login" data-role="guard">
+          <div class="feature-icon">👮</div>
+          <h4>Patrol Monitoring</h4>
+          <p>Real-time GPS patrol tracking, checkpoint scanning, and missed-patrol alerts.</p>
+        </article>
+        <article class="feature-card" data-action="show-login" data-role="officer">
+          <div class="feature-icon">📹</div>
+          <h4>AI Surveillance</h4>
+          <p>Live camera grid with AI-powered anomaly, motion, and crowd-density detection.</p>
+        </article>
+        <article class="feature-card" data-action="show-login" data-role="resident">
+          <div class="feature-icon">🪪</div>
+          <h4>Visitor Management</h4>
+          <p>Pre-register guests, scan QR codes, manage watchlists and blacklists.</p>
+        </article>
+        <article class="feature-card" data-action="show-login" data-role="admin">
+          <div class="feature-icon">🔐</div>
+          <h4>Access Control</h4>
+          <p>Manage doors, zones, biometric credentials and time-based permissions.</p>
+        </article>
+        <article class="feature-card" data-action="show-login" data-role="admin">
+          <div class="feature-icon">📊</div>
+          <h4>Analytics & Reports</h4>
+          <p>Custom dashboards, scheduled reports and exportable compliance evidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INNOVATIVE FEATURES -->
+    <section class="innovate">
+      <h3 class="section-title">Innovative features that set us apart</h3>
+      <div class="innovate-grid">
+        <div class="innovate-card">
+          <span class="badge-new">NEW</span>
+          <h4>🆘 One-Tap Panic Button</h4>
+          <p>Mobile-grade panic button that streams live audio & GPS to dispatch in under 2 seconds.</p>
+        </div>
+        <div class="innovate-card">
+          <span class="badge-new">AI</span>
+          <h4>🤖 Threat Scoring Engine</h4>
+          <p>Every event is scored 0-100 with an explainable AI model — focus on what truly matters.</p>
+        </div>
+        <div class="innovate-card">
+          <span class="badge-new">LIVE</span>
+          <h4>🗺️ Live Operations Map</h4>
+          <p>See all guards, incidents, visitors and cameras on a single geo-aware heat map.</p>
+        </div>
+        <div class="innovate-card">
+          <span class="badge-new">BETA</span>
+          <h4>🗣️ Voice Dispatch</h4>
+          <p>Push-to-talk between dispatchers and field guards with transcription & translation.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="landing-footer">
+      <p>© 2026 LulaSecSystem • Built for security teams that never sleep.</p>
+    </footer>
+  </div>
+
+  <!-- ======================= LOGIN MODAL ======================= -->
+  <div id="login-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-action="close-modal"></div>
+    <div class="modal-card login-card">
+      <button class="modal-close" data-action="close-modal" aria-label="Close">×</button>
+      <div class="login-header">
+        <div class="logo-mark small">
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <path d="M20 2 L36 8 V20 C36 28 28 35 20 38 C12 35 4 28 4 20 V8 Z" fill="url(#lg)"/>
+            <path d="M13 20 L18 25 L27 14" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2>Welcome back to LulaSecSystem</h2>
+        <p>Sign in to access your security operations dashboard.</p>
+      </div>
+
+      <form id="login-form" class="login-form" autocomplete="off">
+        <label>
+          <span>Email</span>
+          <input type="email" id="login-email" placeholder="you@lulasecsystem.com" required value="admin@lulasecsystem.com" />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="login-password" placeholder="••••••••" required value="Demo1234!" />
+        </label>
+        <div class="login-row">
+          <label class="check"><input type="checkbox" id="remember-me" /> Remember me</label>
+          <a href="#" class="link" data-action="forgot">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+        <div id="login-error" class="error-msg" hidden></div>
+      </form>
+
+      <div class="demo-divider"><span>Or try a demo account</span></div>
+      <div class="demo-grid" id="demo-grid">
+        <!-- Demo accounts injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= APP SHELL ======================= -->
+  <div id="app-shell" class="app-shell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand small">
+          <div class="logo-mark">
+            <svg viewBox="0 0 40 40" width="28" height="28">
+              <path d="M20 2 L36 8 V20 C36 28 28 35 20 38 C12 35 4 28 4 20 V8 Z" fill="url(#lg)"/>
+              <path d="M13 20 L18 25 L27 14" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="brand-name">LulaSecSystem</h2>
+            <p class="brand-tag" id="sidebar-role-label">Admin Console</p>
+          </div>
+        </div>
+        <button class="sidebar-collapse" id="sidebar-collapse" aria-label="Collapse">⟨</button>
+      </div>
+
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <!-- Injected by JS based on role -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-card" id="user-card">
+          <div class="avatar" id="user-avatar">A</div>
+          <div class="user-info">
+            <strong id="user-name">Admin User</strong>
+            <span id="user-role">Administrator</span>
+          </div>
+        </div>
+        <button class="btn btn-ghost btn-block" data-action="logout">🚪 Sign out</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+        <div class="topbar-search">
+          <input type="search" id="global-search" placeholder="Search incidents, visitors, guards…" />
+          <span class="kbd">⌘K</span>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" data-action="open-notifications" title="Notifications" id="notif-btn">
+            🔔 <span class="dot" id="notif-dot" hidden></span>
+          </button>
+          <button class="icon-btn" data-action="toggle-theme" title="Toggle theme" id="theme-btn">🌙</button>
+          <button class="panic-btn" data-action="panic" title="Emergency Panic">🆘 PANIC</button>
+        </div>
+      </header>
+
+      <section class="page-host" id="page-host">
+        <!-- Active page rendered here -->
+      </section>
+    </main>
+
+    <!-- NOTIFICATIONS PANEL -->
+    <aside class="notif-panel" id="notif-panel" hidden>
+      <div class="notif-header">
+        <h3>Notifications</h3>
+        <button class="btn btn-ghost btn-sm" data-action="mark-all-read">Mark all read</button>
+      </div>
+      <div class="notif-list" id="notif-list"></div>
+    </aside>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- PANIC OVERLAY -->
+  <div id="panic-overlay" class="panic-overlay" hidden>
+    <div class="panic-card">
+      <div class="panic-pulse"></div>
+      <h2>🆘 EMERGENCY DISPATCH ACTIVE</h2>
+      <p id="panic-msg">Streaming live audio & GPS to nearest response unit…</p>
+      <div class="panic-meta">
+        <div><span>Status</span><strong id="panic-status">Dispatching…</strong></div>
+        <div><span>ETA</span><strong id="panic-eta">3 min 12 s</strong></div>
+        <div><span>Unit</span><strong id="panic-unit">Unit 7 — Sgt. Nkosi</strong></div>
+      </div>
+      <button class="btn btn-danger btn-lg" data-action="cancel-panic">Cancel Emergency</button>
+    </div>
+  </div>
+
+  <!-- GENERIC MODAL -->
+  <div id="generic-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-action="close-generic"></div>
+    <div class="modal-card" id="generic-modal-card">
+      <button class="modal-close" data-action="close-generic" aria-label="Close">×</button>
+      <div id="generic-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
